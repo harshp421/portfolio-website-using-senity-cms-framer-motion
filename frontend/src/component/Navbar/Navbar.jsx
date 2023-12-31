@@ -15,6 +15,7 @@ const Navbar = () => {
         {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
           <li className='app__flex p-text' key={`link-${item}`}> <div /><a href={`#${item}`}>{item}</a></li>
         ))}
+        <li className='app__flex p-text'> <div/><a href="https://drive.google.com/file/d/1QBRCYm1548rljeosfvfw7CPeLPZWmJW2/view?usp=sharing" target="_blank">Resume</a></li>
       </ul>
     {/* code for the manuicon */}
       <div className="app__navbar-menu">
@@ -25,9 +26,10 @@ const Navbar = () => {
               transition={{ duration: 0.85, ease: 'easeOut' }} >
               <HiX onClick={() => setToggle(false)} />
               <ul >
-                {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+                {['home', 'about', 'work', 'skills', 'contact','Resume'].map((item) => (
                   <li key={`${item}`}> <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a></li>
                 ))}
+                <li className='app__flex p-text'> <div/><a href="https://drive.google.com/file/d/1QBRCYm1548rljeosfvfw7CPeLPZWmJW2/view?usp=sharing" target="_blank">Resume</a></li>
               </ul>
             </motion.div>
           )
